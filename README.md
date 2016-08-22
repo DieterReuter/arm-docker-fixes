@@ -9,7 +9,7 @@ Scripts and hotfixes to fix some issues with Docker on ARM devices
 
 ## Acknowledgements
 
-If a fix works for you, please tweet me a success message on Twitter, if it doesn't please feel free to open an issue here - or better try to resolve the issue and file a PR. ;-)
+If a fix works for you, please tweet me a success message on Twitter, if it doesn't please feel free to open an issue here - or better try to resolve the issue and file a PR. :smirk:
 
 Cheers, <br>
 Dieter [@Quintus23M](https://twitter.com/Quintus23M)
