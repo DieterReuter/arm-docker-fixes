@@ -24,7 +24,7 @@ curl -sSL https://github.com/DieterReuter/arm-docker-fixes/raw/master/001-fix-do
 
 Or you can just use `ssh` from a Mac or a Linux machine:
 ```
-
+ssh pirate@192.168.2.112 "curl -sSL https://github.com/DieterReuter/arm-docker-fixes/raw/master/001-fix-docker-machine-1.8.0-create-for-arm/apply-fix-001.sh | bash"
 ```
 
 
