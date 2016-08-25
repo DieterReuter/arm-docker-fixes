@@ -15,7 +15,7 @@ fi
 
 # check if the Docker Engine is installed
 DOCKERVERSION=$(set +e; docker -v 2>/dev/null; set -e)
-if [[ "x$DOCKERVERSION" == "x" ]] && [[ -e /var/run/docker.sock ]]; then
+if [[ "x$DOCKERVERSION" == "x" ]] || [[ ! -e /var/run/docker.sock ]]; then
 	echo "ERROR: Docker Engine is not installed, please install it before applying this fix"
 	exit 1
 fi
