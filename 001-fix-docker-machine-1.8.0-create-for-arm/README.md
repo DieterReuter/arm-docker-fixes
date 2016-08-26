@@ -52,7 +52,6 @@ docker-machine create \
   --engine-storage-driver=overlay \
   --generic-ip-address=$IPADDRESS \
   --generic-ssh-user=$PI_USERNAME \
-  --engine-install-url=https://get.docker.com/ \
   pi
 ```
 *for Raspbian use:*
@@ -71,7 +70,6 @@ docker-machine create \
   --engine-storage-driver=overlay \
   --generic-ip-address=$IPADDRESS \
   --generic-ssh-user=$PI_USERNAME \
-  --engine-install-url=https://get.docker.com/ \
   pi
 ```
 
