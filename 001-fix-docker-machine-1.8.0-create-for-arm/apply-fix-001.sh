@@ -43,4 +43,4 @@ fi
 
 ### done - SUCCESS
 echo "SUCCESS: Fix 001 successfully applied."
-echo "  don't forget to send me a tweet to @Quintus23, thanks.  ;-)"
+echo "  don't forget to send me a tweet to @Quintus23M, thanks.  ;-)"
