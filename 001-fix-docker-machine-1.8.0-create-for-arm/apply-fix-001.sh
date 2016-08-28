@@ -9,8 +9,12 @@ fi
 # read os-release infos
 . /etc/os-release
 if [[ "x$NAME" != "xRaspbian GNU/Linux" ]]; then
-	echo "ERROR: wrong OS type '$NAME'"
-	exit 1
+	if [[ "x$NAME" = "xDebian GNU/Linux" ]] && [[ -e "/etc/chip_build_info.txt" ]]; then
+		echo "INFO: OS Debian on C.H.I.P. computer detected."
+	else
+		echo "ERROR: wrong OS type '$NAME'"
+		exit 1
+	fi
 fi
 
 # check if the Docker Engine is installed
