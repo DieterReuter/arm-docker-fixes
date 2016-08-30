@@ -7,7 +7,7 @@ if [[ ! -f "/etc/os-release" ]]; then
 fi
 
 # read os-release infos
-. /etc/os-release
+set +e; . /etc/os-release 2>/dev/null; set -e
 if [[ "x$NAME" != "xRaspbian GNU/Linux" ]]; then
 	if [[ "x$NAME" = "xDebian GNU/Linux" ]] && [[ -e "/etc/chip_build_info.txt" ]]; then
 		echo "INFO: OS Debian on C.H.I.P. computer detected."
